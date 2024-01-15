@@ -24,7 +24,11 @@ const root = ReactDOM.createRoot(
 root.render(
   <Router>
     <WagmiConfig config={config}>
-      <ConnectKitProvider debugMode>
+      <ConnectKitProvider debugMode customTheme={{
+          "--ck-connectbutton-color" : "#fff",
+          "--ck-connectbutton-background" : "rgba(180,155,255, 0.7)",
+          "--ck-connectbutton-hover-background" : "rgba(180,155,255, 1)",
+        }}>
         <App />
       </ConnectKitProvider>
     </WagmiConfig>
