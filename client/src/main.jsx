@@ -1,4 +1,4 @@
-import React from 'react';
+import {BrowserRouter as Router} from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 
 import './index.css';
@@ -10,9 +10,8 @@ import { ConnectKitProvider, getDefaultConfig } from 'connectkit';
 
 const config = createConfig(
   getDefaultConfig({
-    appName: 'ConnectKit Vite demo',
-    //infuraId: import.meta.env.VITE_INFURA_ID,
-    //alchemyId:  import.meta.env.VITE_ALCHEMY_ID,
+    appName: 'client',
+    alchemyId:  import.meta.env.ALCHEMY_API_KEY,
     chains: [sepolia],
     walletConnectProjectId: import.meta.env.WALLETCONNECT_PROJECT_ID,
   })
@@ -23,11 +22,11 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-  <React.StrictMode>
+  <Router>
     <WagmiConfig config={config}>
       <ConnectKitProvider debugMode>
         <App />
       </ConnectKitProvider>
     </WagmiConfig>
-  </React.StrictMode>
+  </Router>
 );
