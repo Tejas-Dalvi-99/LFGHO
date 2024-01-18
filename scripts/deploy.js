@@ -2,7 +2,7 @@ async function main() {
   const [deployer] = await ethers.getSigners();
   console.log("Deploying contract with the account:", deployer.address);
 
-  const contract = await ethers.deployContract("<ContractName>");
+  const contract = await ethers.deployContract("GHO");
   console.log("Contract address:", await contract.address);
 }
 

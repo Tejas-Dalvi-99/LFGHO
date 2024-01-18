@@ -1,6 +1,7 @@
 import './Navbar.css'
 import { ConnectKitButton } from "connectkit";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion"; 
 
 function Navbar() {
   const navigateTo = useNavigate();
@@ -10,9 +11,29 @@ function Navbar() {
           <ConnectKitButton />
         </div>
         <div className="page-links">
-          <p className="link" onClick={()=>navigateTo('/')}>Home</p>
-          <p className="link" onClick={()=>navigateTo('/featured')}>Featured</p>
-          <p className="link" onClick={()=>navigateTo('/judges')}>Judges</p>
+          <motion.p 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: 1.5 }}
+          className="link" onClick={()=>navigateTo('/')}>Home</motion.p>
+
+          <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: 1.5 , times: [0.1]}} 
+          className="link" onClick={()=>navigateTo('/featured')}>Featured</motion.p>
+
+          <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: 1.5 , times: [0.2]}} 
+          className="link" onClick={()=>navigateTo('/participate')}>Participate</motion.p>
+
+          <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: 1.5 , times: [0.3]}} 
+          className="link" onClick={()=>navigateTo('/judges')}>Judges</motion.p>
         </div>
       </div>
   )

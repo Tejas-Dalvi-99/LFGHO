@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 
-function Judges() {
+function Judges({address}) {
   return (
-    <div>Judges</div>
+    <div>{address ? "Judges" : "Please Connect Your Wallet"}</div>
   )
 }
 

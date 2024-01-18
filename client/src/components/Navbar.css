@@ -16,7 +16,7 @@
 
 .page-links {
   display: flex;
-  gap: 40px;
+  gap: 30px;
 }
 
 .page-links .link {

@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 
-function Featured() {
+function Featured({address}) {
   return (
-    <div>Featured</div>
+    <div>{address ? "Featured" : "Please Connect Your Wallet"}</div>
   )
 }
 

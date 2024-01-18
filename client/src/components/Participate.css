@@ -1,0 +1,124 @@
+.contact{
+    margin-top: 9vh;
+    width: 60vw;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    /* border: 2px solid violet; */
+    box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 20px 25px;
+    box-sizing: border-box;
+}
+
+.contact h1{
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border: 2px solid red; */
+}
+
+.form{
+    box-sizing: border-box;
+    padding: 20px 10px;
+    width: 95%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;  
+}
+
+input{
+    color: #37334B;
+    box-sizing: border-box;
+    padding-left: 10px;
+    height: 6vh;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: 3px solid rgba(180, 155, 255, 0.5);
+    background-color: transparent;
+    transition: ease-in-out 0.5s;
+}
+
+input:focus{
+    border: 3px solid #b49bff;
+}
+
+.message-box{
+    color: #37334B;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 25vh;
+    width: 61vw;
+    resize: none;
+    border-radius: 10px;
+    border: 3px solid rgba(180, 155, 255, 0.5);
+    outline: none;
+    transition: ease-in-out 0.5s;
+}
+
+.message-box:focus{
+    border: 3px solid #b49bff;
+}
+
+.img-input{
+    height: 7.5%;
+    width: 25%;
+    margin-right: 75%;
+    /* border: 2px solid red; */
+}
+
+.img-input input{
+    outline: none;
+    border: none;
+}
+
+.btn{
+    height: 6vh;
+    width: 10vw;
+    border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid #b49bff;
+    transition: ease-in-out 0.3s;
+    font-weight: bold;
+    color: #4D4637;
+}
+
+.btn:hover{
+    background-color: #b49bff;
+    color: white;
+}
+
+@media (max-width:768px) {
+    .contact{
+        margin-top: 3vh;
+        width: 80vw;
+    }
+
+    .form{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    .message-box{
+        width: 100%;
+    }
+
+    .btn{
+        width: 25vw;
+        background-color: #FE8D59;
+        color: white;
+    }
+}
