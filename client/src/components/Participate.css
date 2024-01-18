@@ -7,7 +7,7 @@
     justify-content: flex-start;
     gap: 10px;
     /* border: 2px solid violet; */
-    box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 8px 30px 0 rgba(84, 78, 113,0.37);
     border-radius: 10px;
     flex-direction: column;
     padding: 20px 25px;
@@ -17,6 +17,7 @@
 .contact h1{
     font-size: 30px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #544e71;
     /* border: 2px solid red; */
 }
 
@@ -46,7 +47,7 @@ input{
 }
 
 input:focus{
-    border: 3px solid #b49bff;
+    border: 3px solid #9b79ff;
 }
 
 .message-box{
@@ -65,7 +66,7 @@ input:focus{
 }
 
 .message-box:focus{
-    border: 3px solid #b49bff;
+    border: 3px solid #9b79ff;
 }
 
 .img-input{
