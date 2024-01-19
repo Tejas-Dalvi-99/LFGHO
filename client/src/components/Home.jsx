@@ -1,45 +1,22 @@
-/* eslint-disable react/prop-types */
-// import { useContractWrite } from 'wagmi'
-// import Example from '../abi/Example.json' ; 
+/* eslint-disable react/prop-types */ 
 // import { parseEther } from 'viem';
-// import { useToken } from 'wagmi'
 import { useEffect } from 'react';
 import { motion } from 'framer-motion'
-// import { useBalance } from 'wagmi';
 import './Home.css'
-import vase2 from '../assets/vase 2 nobg.png'
+// import vase2 from '../assets/vase 2 nobg.png'
+// import multiple from '../assets/multipleflowers.png'
+// import plant from '../assets/plant.png'
+// import hotpot from '../assets/hotpot.png'
+import plants2 from '../assets/plants2.png'
 
 
 function Home({address}) {
 
   const userAddress = address;
+
   useEffect(()=>{
-    console.log(userAddress)
+    // console.log(userAddress)
   },[userAddress]) 
-
-  // const { write } = useContractWrite({
-  //   address: '0xBEF08C7941066b7598fa1478dE70701182053f5f',
-  //   abi: Example.abi,
-  //   functionName: 'update',
-  //   account: userAddress,
-  //   args: ["Tompr na bhai"],
-  //   // value: parseEther('1'),
-  //   onError(error) {
-  //     console.log('Error', error)
-  //   },
-  // })
-
-  // const { data: GHOInfo } = useToken({
-  //   address: '0xc4bF5CbDaBE595361438F8c6a187bDc330539c60',
-  // })
-
-  // const { data: balance } = useBalance({
-  //   address: userAddress,
-  // })
-  
-  // useEffect(()=>{
-  //   console.log(GHOInfo)
-  // },[GHOInfo])
 
   return (
     <div className='home'>
@@ -77,7 +54,7 @@ function Home({address}) {
       animate={{ opacity: 1 , x: 0 }}
       transition={{ ease: "easeInOut", duration: 2 , times: [0.3]}} 
       >
-        <img src={vase2}></img>
+        <img src={plants2}></img>
       </motion.div>
     </div> 
     </div>

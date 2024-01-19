@@ -8,7 +8,6 @@ import Featured from "./components/Featured";
 import Judges from "./components/Judges";
 import Navbar from "./components/Navbar";
 import Participate from "./components/Participate";
-// import Example from './abi/Example.json' ; 
 // import { useContractRead } from "wagmi";
 // import { useContractWrite } from 'wagmi'
 // import { useEffect } from "react";
