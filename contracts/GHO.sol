@@ -15,9 +15,9 @@ contract GHO {
         owner = msg.sender;
     }
 
-    function transferToken(address recipient, uint256 amount) public returns (bool) {
+    function transferToken(address recipient) public returns (bool) {
         require(msg.sender == owner , "You are not Authorised to perform this Action");
-        return token.transfer(recipient, amount);
+        return token.transfer(recipient, 1000000000000000000);
     }
 
     struct Entry {

@@ -15,7 +15,7 @@ function Participate({ address }) {
   const [loader, setLoader] = useState(false);
 
   const { write } = useContractWrite({
-    address: '0x30CF065077BEBf412bD64490c2E50A21B4BaB621',
+    address: '0x2DC0456FffEEdc5da87683382C8366f13ec61499',
     abi: GHO.abi,
     functionName: 'addEntry',
     account: userAddress,

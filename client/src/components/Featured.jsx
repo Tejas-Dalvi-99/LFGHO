@@ -5,28 +5,32 @@ import GHO from "../abi/GHO.json";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-function Featured({ address }) {
+function Featured() {
 
   const [entries, setEntries] = useState([]);
   const { data } = useContractRead({
-    address: "0x30CF065077BEBf412bD64490c2E50A21B4BaB621",
+    address: "0x2DC0456FffEEdc5da87683382C8366f13ec61499",
     abi: GHO.abi,
     functionName: "getAllEntries",
   });
 
   useEffect(() => {
+    async function fetchdata(){
     try {
-      setEntries(data);
+      const response = await data
+      setEntries(response);
       console.log(entries);
     } catch (e) {
-      console.log("Error :");
+      console.log("Error :",e);
     }
+  }
+  fetchdata();
   }, [data, entries]);
 
   return (
     <>
       <div className="featured">
-        {entries.length
+        {entries
           ? entries.map((entry) => {
               return (
                 <motion.div
